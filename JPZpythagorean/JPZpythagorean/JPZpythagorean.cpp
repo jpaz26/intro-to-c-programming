@@ -10,7 +10,9 @@ using namespace std;
 int main()
 {
 	// create variables for a,b, and c
-	double a, b, c;
+	double a;
+	double b;
+	double c;
 	//print out text prompting user input for variables
 	cout << "Enter a and b" << endl;
 	//input code for a and b
