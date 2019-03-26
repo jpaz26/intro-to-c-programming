@@ -15,7 +15,7 @@ int main()
 	int intLimit = 100; //Set limit for guess
 	int intGuess = rand() % intLimit + 1; //Give me a number between 0 and 51 then add 1.
 	int intCurrentGuess = 1;
-	int hint = intGuess - 5;
+	int hint = intGuess - 5;//a number in range of the answer
 
 	do { //Not equal to guess
 
