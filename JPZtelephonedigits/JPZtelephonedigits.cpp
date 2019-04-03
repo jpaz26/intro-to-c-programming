@@ -1,5 +1,6 @@
-// JPZtelephonedigits.cpp : Defines the entry point for the console application.
-//
+// JPZtelephonedigits.cpp : This application takes a word or words and converts them into a phone number
+// Joshua Paz
+// intro to c++ programming
 
 #include "stdafx.h"
 #include <iostream>
