@@ -25,11 +25,37 @@ int main()
 	Player objDealer;
 	Player objPlayer;
 	Deck objDeck = Deck(4);
+	int choice = 0;
 	
+	do // do while loop runs until player enters option 2 to end the game
+	{
+		// Prompts user to enter 1 to start game or 2 to end it
+		cout << " 1 - Start the game." << endl;
+		cout << " 2 - Exit." << endl;
+		cout << " Enter your choice and press return: " << endl;
+		cin >> choice;
+
+		switch (choice)
+		{
+		case 1:
+			//code to start the game
+			break;
+		case 2:
+			cout << "End of Program." << endl; // this choice ends the game
+			return 0;
+			break;
+		default:
+			cout << "Not a Valid Choice." << endl; // default output if player enters wrong choice option prompted
+			cout << "Choose again." << endl;
+			break;
+		}
+
+
+
 		//objDealer is set to display the name "Dealer" and objPlayer.InputPlayerName is input from the player to enter a name.
 		objDealer.setPlayerName("Dealer");
 		objPlayer.inputPlayerName();
-		
+
 		//These lines output the dealer and player names
 		cout << objDealer.toString() << endl;
 		cout << objPlayer.toString() << endl;
@@ -80,7 +106,7 @@ int main()
 			cout << "Player wins!!!" << endl;
 		}
 
-
+	} while (choice != 2);
     return 0;
 }
 
